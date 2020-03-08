@@ -47,7 +47,6 @@ public class Game {
             }
     }
 
-
     /**
      * Calculer des statistiques de la partie précédente
      *
