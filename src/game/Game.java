@@ -84,7 +84,7 @@ public class Game {
      */
     private int totalNumberMoves() {
         //System.out.println("Nombre total de lancers pour tous les joueurs :" + history.keySet().parallelStream().map(x -> history.get(x).size()).reduce(0, Integer::sum));
-        return history.keySet().parallelStream().map(x -> history.get(x).size()).reduce(0, Integer::sum);
+        return history.keySet().stream().map(x -> history.get(x).size()).reduce(0, Integer::sum);
     }
 
     /**
